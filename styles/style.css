@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #EBF400;
+    --cor-terciaria: #F72798;
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+    --hover: #111111;
+}
+
+body{
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.texto-destaque{
+    color: var(--cor-terciaria);
+}
+
+.principal__titulo{
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.principal__texto{
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+}
+
+.principal{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.principal__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.principal__links{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.principal__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    border-radius: 8px;
+    color: var(--cor-secundaria);
+    padding: 21.5px 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+}
+
+.principal__links__link:hover{
+    background-color: var(--hover);
+}
+
+
+.principal__links__subtitulo{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.foto{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .principal{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .principal__conteudo{
+        width: auto;
+    }
+}
